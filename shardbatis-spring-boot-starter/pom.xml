@@ -5,7 +5,7 @@
     <parent>
         <artifactId>shardbatis-spring-boot</artifactId>
         <groupId>com.rookiefly.open.shardbatis</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>shardbatis-spring-boot-starter</artifactId>
@@ -28,7 +28,6 @@
         <dependency>
             <groupId>com.rookiefly.open.shardbatis</groupId>
             <artifactId>shardbatis-spring-boot-autoconfigure</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
