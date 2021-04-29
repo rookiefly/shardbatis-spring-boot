@@ -1,0 +1,1 @@
+providers: shardbatis-spring-boot-autoconfigure,shardbatis,mybatis-spring-boot-autoconfigure,mybatis,mybatis-spring

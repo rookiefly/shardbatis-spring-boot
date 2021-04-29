@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.rookiefly.open.shardbatis.configuration.ShardbatisAutoConfiguration
