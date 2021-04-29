@@ -34,7 +34,7 @@ public class ShardbatisAutoConfiguration {
     private ShardbatisProperties properties;
 
     @PostConstruct
-    public void addPageInterceptor() {
+    public void addShardPlugin() {
         ShardPlugin interceptor = new ShardPlugin();
         interceptor.setProperties(properties.getProperties());
         for (SqlSessionFactory sqlSessionFactory : sqlSessionFactoryList) {
