@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shardingConfig PUBLIC "-//open.rookiefly.com//DTD Shardbatis 2.0//EN"
+        "http://open.rookiefly.com/dtd/shardbatis-config.dtd">
+<shardingConfig>
+    <!--    <ignoreList>-->
+    <!--        <value>findAll</value>-->
+    <!--        <value>com.rookiefly.open.shardbatis.samples.mapper.UserMapper.findAll</value>-->
+    <!--    </ignoreList>-->
+    <!--    <parseList>-->
+    <!--        <value>parseId</value>-->
+    <!--        <value> <![CDATA[ parseid>2]]></value>-->
+    <!--    </parseList>-->
+
+    <strategy tableName="user"
+              strategyClass="com.rookiefly.open.shardbatis.samples.strategy.UserTestShardStrategyImpl"/>
+
+</shardingConfig>

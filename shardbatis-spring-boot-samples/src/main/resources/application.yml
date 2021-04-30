@@ -1,0 +1,9 @@
+logging:
+  level:
+    com.rookiefly.open.shardbatis.samples.mapper: TRACE
+    root: INFO
+shardbatis:
+  sharding-config: shard_config.xml
+spring:
+  datasource:
+    schema: import.sql
