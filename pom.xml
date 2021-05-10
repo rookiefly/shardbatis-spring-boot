@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <name>shardbatis-spring-boot</name>
-    <url>http://www.example.com</url>
+    <url>https://github.rookiefly.com/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,19 +33,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
+                <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-configuration-processor</artifactId>
-                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -59,12 +52,22 @@
             </dependency>
             <dependency>
                 <groupId>com.rookiefly.open.shardbatis</groupId>
+                <artifactId>shardbatis-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rookiefly.open.shardbatis</groupId>
                 <artifactId>shardbatis</artifactId>
                 <version>${shardbatis.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-autoconfigure</artifactId>
+                <version>${mybatis-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis-spring-boot.version}</version>
             </dependency>
         </dependencies>
@@ -119,5 +122,6 @@
     <modules>
         <module>shardbatis-spring-boot-autoconfigure</module>
         <module>shardbatis-spring-boot-starter</module>
+        <module>shardbatis-spring-boot-samples</module>
     </modules>
 </project>

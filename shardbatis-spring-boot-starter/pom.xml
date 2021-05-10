@@ -29,5 +29,9 @@
             <groupId>com.rookiefly.open.shardbatis</groupId>
             <artifactId>shardbatis-spring-boot-autoconfigure</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.rookiefly.open.shardbatis</groupId>
+            <artifactId>shardbatis</artifactId>
+        </dependency>
     </dependencies>
 </project>
